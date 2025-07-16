@@ -37,10 +37,24 @@ app.get('/roll/:value', (req, res) => {
 
 
 app.get('/collectibles/:index-parameter', (req, res) => {
-    if NaN {
-        res.send("This item is not yet in stock. Check back soon!")
-    }
-})
+    if (NaN) {
+        return("This item is not yet in stock. Check back soon!")}
+    } else {
+        res.send(`So, you want the ${name}? For ${price}, it can be yours...`)
+    });
+
+
+
+  const shoes = [
+      { name: "Birkenstocks", price: 50, type: "sandal" },
+      { name: "Air Jordans", price: 500, type: "sneaker" },
+      { name: "Air Mahomeses", price: 501, type: "sneaker" },
+      { name: "Utility Boots", price: 20, type: "boot" },
+      { name: "Velcro Sandals", price: 15, type: "sandal" },
+      { name: "Jet Boots", price: 1000, type: "boot" },
+      { name: "Fifty-Inch Heels", price: 175, type: "heel" }
+  ];
+
 
 
 
@@ -48,3 +62,5 @@ app.get('/collectibles/:index-parameter', (req, res) => {
 app.listen(3000, () => {
     console.log('Listening on port 3000');
 });
+
+//need to finish this! ^^

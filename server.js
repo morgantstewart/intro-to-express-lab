@@ -4,13 +4,10 @@ const app = express();
 app.use(morgan('dev'));
 
 
-app.get('/greetings/usernameParameter', (req, res) => {
+app.get('/greetings/username-parameter', (req, res) => {
     const username = req.query.username-parameter;
-    res.send('Hi there, ${username-parameter}!');
-})
-
-
-
+    res.send(`Hi there, ${username}!`);
+});
 
 
 

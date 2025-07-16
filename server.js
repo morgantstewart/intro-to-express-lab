@@ -16,21 +16,10 @@ app.get('/greetings', (req, res) => {
 });
 
 
-// app.get('/roll', (req, res) => {
-//     if roll !== (number) {
-//         res.send('You must specify a number.')
-//     } else {
-//         res.send('you rolled a number.')
-//     };
-// });
-
-
 
 
 app.get('/roll/:value', (req, res) => {
     const value = req.params.value;
-
-    // Check if the value is a number
     if (isNaN(value)) {
         return res.send('You must specify a number!');
     }
@@ -40,6 +29,18 @@ app.get('/roll/:value', (req, res) => {
     res.send(`You rolled a ${rolled}.`);
 });
 
+  const collectibles = [
+    { name: 'shiny ball', price: 5.95 },
+    { name: 'autographed picture of a dog', price: 10 },
+    { name: 'vintage 1970s yogurt SOLD AS-IS', price: 0.99 }
+  ];
+
+
+app.get('/collectibles/:index-parameter', (req, res) => {
+    if NaN {
+        res.send("This item is not yet in stock. Check back soon!")
+    }
+})
 
 
 

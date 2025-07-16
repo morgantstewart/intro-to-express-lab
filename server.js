@@ -45,24 +45,6 @@ app.get('/collectibles/:index-parameter', (req, res) => {
 
 
 
-// // // query parameters
-// app.get('/hello', (req, res) => {
-//     const name = req.query.name;
-//     const age = req.query.age;
-//  res.send(`Hello there, ${name}! I hear you are ${age} years old!`);
-// });
-
-
-
-// //route parameters
-// app.get('/:itemNumber', (req, res) => {
-//     console.log(req.params.itemNumber);
-//     res.send(`<h1>item ${req.params.itemNumber}</h1>`);
-// });
-
-
-
-
 app.listen(3000, () => {
     console.log('Listening on port 3000');
 });

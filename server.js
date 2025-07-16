@@ -1,18 +1,24 @@
 const express = require('express');
 const morgan = require('morgan');
 const app = express();
-app.use(morgan('dev'));
+// app.use(morgan('dev'));
 
 
-app.get('/greetings/username-parameter', (req, res) => {
-    const username = req.query.username-parameter;
+// app.get('/', (req, res) => {
+//       res.send('Hello, Express!');
+//     });
+
+
+
+app.get('/greetings', (req, res) => {
+    const username = req.query.username;
     res.send(`Hi there, ${username}!`);
 });
 
 
 
 
-// // query parameters
+// // // query parameters
 // app.get('/hello', (req, res) => {
 //     const name = req.query.name;
 //     const age = req.query.age;
